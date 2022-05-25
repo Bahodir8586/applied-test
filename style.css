@@ -254,6 +254,7 @@ header {
   align-items: center;
   gap: 4px;
   margin-bottom: 8px;
+  line-height: 16px;
 }
 
 .product__price {
