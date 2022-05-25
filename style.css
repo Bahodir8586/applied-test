@@ -1,0 +1,327 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  padding: 15px 0 126px;
+  font-size: 28px;
+  font-family: "Open sans";
+  font-weight: 400;
+  line-height: 36.4px;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+header {
+  background: #ffffff;
+}
+
+.header__top {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 12px;
+  font-family: Oswald, sans-serif;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.16em;
+  color: #000000;
+  text-transform: uppercase;
+  background: #fbfbfb;
+}
+
+.header__main {
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__toggler {
+  display: none;
+}
+
+.logo img {
+  height: 20px;
+  width: auto;
+}
+
+.header__navbar {
+  padding: 0;
+}
+
+.navbar__list {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+  margin: 0;
+}
+
+.navbar__list-item a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "Open sans";
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.175em;
+  cursor: pointer;
+}
+
+.header__icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__icons img {
+  cursor: pointer;
+}
+
+.info {
+  background-color: #000000;
+  position: relative;
+}
+
+.info__section {
+  display: flex;
+  color: #ffffff;
+}
+
+.info__section > div {
+  width: 50%;
+  z-index: 2;
+}
+.info__image-box img {
+  width: 100%;
+}
+
+.info__section-1 {
+  padding-left: 40px;
+}
+
+.info__section-text-1 {
+  padding: 40px;
+}
+
+.info__section-text-1 p {
+  font-size: 14px;
+  font-family: "Open sans";
+  font-weight: 400;
+  line-height: 23.45px;
+  margin: 0;
+}
+
+.info__section-text-1 p:first-of-type {
+  margin-bottom: 80px;
+}
+
+.info__section-2,
+.info__section-3 {
+  padding: 80px 40px;
+  align-items: center;
+}
+
+.info__section-text-2 {
+  padding-left: 140px;
+}
+
+.info__section-text-2 span {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-family: "Open sans";
+  font-weight: 400;
+  line-height: 26.8px;
+}
+
+.info__section-text-2 ul {
+  list-style-type: none;
+  width: 100%;
+  overflow: hidden;
+}
+
+.info__section-text-2 li {
+  display: flex;
+  margin-bottom: 16px;
+  width: 425px;
+}
+
+.info__section-text-2 li::before {
+  content: "/";
+  color: #c2a578;
+  margin-right: 9px;
+  width: 9px;
+  height: 27px;
+}
+
+.info__section-text-2 li,
+.info__section-text-2 li::before {
+  font-size: 16px;
+  font-family: "Arca Majora 3";
+  font-weight: 700;
+  line-height: 26.8px;
+}
+
+.info__section-text-3 {
+  font-size: 40px;
+  font-family: "Open sans";
+  font-weight: 700;
+  line-height: 57.2px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.info__section-text-3 span {
+  width: 557px;
+  padding-left: 40px;
+  display: block;
+}
+.vertical__line {
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #c2a578;
+  opacity: 0.2;
+}
+.line-1 {
+  left: calc(25%);
+}
+.line-2 {
+  left: calc(50%);
+}
+.line-3 {
+  left: calc(75%);
+}
+
+.products {
+  padding: 80px 40px;
+}
+
+.products h2 {
+  font-size: 28px;
+  font-family: "Open sans";
+  font-weight: 400;
+  line-height: 36.4px;
+  letter-spacing: 0.08em;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.product__item {
+  position: relative;
+}
+
+.product__bonus {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #ffffff;
+  padding: 4px 6px;
+  font-size: 12px;
+  font-family: "Open sans";
+  font-weight: 400;
+  line-height: 20.1px;
+}
+
+.product__image {
+  width: 100%;
+}
+
+@media (max-width: 575px) {
+  h1 {
+    padding: 5px 0 19px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23.4px;
+  }
+  .header__top {
+    background: #f1f1f1;
+    padding: 6px 0;
+  }
+  .header__main {
+    padding: 16px;
+  }
+  .nav__toggler {
+    display: block;
+  }
+  .logo img {
+    height: 16px;
+  }
+  .header__navbar {
+    display: none;
+  }
+  .header__icons a {
+    display: none;
+  }
+  .header__icons a:nth-child(3) {
+    display: block;
+  }
+  .vertical__line {
+    display: none;
+  }
+  .info__section {
+    flex-direction: column;
+  }
+  .info__section > div {
+    width: 100%;
+  }
+  .info__section-1,
+  .info__section-2,
+  .info__section-3,
+  .info__section-text-1,
+  .info__section-text-2,
+  .info__section-text-3 {
+    padding: 0;
+  }
+  .info__section {
+    padding: 40px 16px;
+  }
+  .info__section-text-1 p {
+    font-size: 12px;
+    line-height: 20.1px;
+  }
+  .info__section-text-1 p:first-of-type {
+    margin-bottom: 40px;
+  }
+  .info__image-box img {
+    width: 100%;
+  }
+  .info__section-text-2 span {
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+  .info__section-text-2 li,
+  .info__section-text-2 li::before {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20.1px;
+  }
+  .info__section-text-3 {
+    font-size: 28px;
+    line-height: 38.13px;
+    letter-spacing: 0.08em;
+  }
+  .info__section-text-3 span {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 24px;
+  }
+  .products {
+    padding: 40px 16px;
+  }
+  .products h2 {
+    font-size: 14px;
+    line-height: 23.52px;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+  }
+}
