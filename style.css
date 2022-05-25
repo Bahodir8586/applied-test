@@ -10,6 +10,10 @@ body {
   overflow-x: hidden;
 }
 
+ul {
+  list-style-type: none;
+}
+
 h1 {
   padding: 15px 0 126px;
   font-size: 28px;
@@ -61,7 +65,6 @@ header {
 .navbar__list {
   display: flex;
   gap: 40px;
-  list-style-type: none;
   margin: 0;
 }
 
@@ -144,7 +147,6 @@ header {
 }
 
 .info__section-text-2 ul {
-  list-style-type: none;
   width: 100%;
   overflow: hidden;
 }
@@ -234,6 +236,34 @@ header {
 
 .product__image {
   width: 100%;
+  margin-bottom: 8px;
+}
+
+.product__name {
+  font-size: 12px;
+  font-family: Oswald;
+  font-weight: 300;
+  line-height: 20.16px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.product__rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.product__price {
+  font-size: 12px;
+  font-family: Oswald;
+  font-weight: 300;
+  line-height: 20.16px;
+  letter-spacing: 0.16em;
+  color: #353535;
+  margin-bottom: 0;
 }
 
 @media (max-width: 575px) {
