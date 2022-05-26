@@ -47,6 +47,7 @@ header {
   color: #000000;
   text-transform: uppercase;
   background: #fbfbfb;
+  margin-bottom: 0;
 }
 
 .header__main {
@@ -234,13 +235,14 @@ header {
 .product__bonus {
   position: absolute;
   top: 8px;
-  left: 8px;
+  left: 16px;
   background: #ffffff;
   padding: 4px 6px;
   font-size: 12px;
   font-family: "Open sans", sans-serif;
   font-weight: 400;
   line-height: 20.1px;
+  margin-bottom: 0;
 }
 
 .product__image {
