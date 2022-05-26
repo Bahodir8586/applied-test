@@ -14,10 +14,17 @@ ul {
   list-style-type: none;
 }
 
+::placeholder {
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  line-height: 19.85px;
+}
+
 h1 {
   padding: 15px 0 126px;
   font-size: 28px;
-  font-family: "Open sans";
+  font-family: "Open sans", sans-serif;
   font-weight: 400;
   line-height: 36.4px;
   letter-spacing: 0.08em;
@@ -33,7 +40,7 @@ header {
   padding: 10px 0;
   text-align: center;
   font-size: 12px;
-  font-family: Oswald, sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 300;
   line-height: 20px;
   letter-spacing: 0.16em;
@@ -72,7 +79,7 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 12px;
-  font-family: "Open sans";
+  font-family: "Open sans", sans-serif;
   font-weight: 400;
   line-height: 17px;
   letter-spacing: 0.175em;
@@ -118,7 +125,7 @@ header {
 
 .info__section-text-1 p {
   font-size: 14px;
-  font-family: "Open sans";
+  font-family: "Open sans", sans-serif;
   font-weight: 400;
   line-height: 23.45px;
   margin: 0;
@@ -142,7 +149,7 @@ header {
   display: block;
   margin-bottom: 25px;
   font-size: 16px;
-  font-family: "Open sans";
+  font-family: "Open sans", sans-serif;
   font-weight: 400;
   line-height: 26.8px;
 }
@@ -169,14 +176,14 @@ header {
 .info__section-text-2 li,
 .info__section-text-2 li::before {
   font-size: 16px;
-  font-family: "Arca Majora 3";
+  font-family: "Arca Majora 3", sans-serif;
   font-weight: 700;
   line-height: 26.8px;
 }
 
 .info__section-text-3 {
   font-size: 40px;
-  font-family: "Open sans";
+  font-family: "Open sans", sans-serif;
   font-weight: 700;
   line-height: 57.2px;
   letter-spacing: 0.18em;
@@ -211,7 +218,7 @@ header {
 
 .products h2 {
   font-size: 28px;
-  font-family: "Open sans";
+  font-family: "Open sans", sans-serif;
   font-weight: 400;
   line-height: 36.4px;
   letter-spacing: 0.08em;
@@ -230,7 +237,7 @@ header {
   background: #ffffff;
   padding: 4px 6px;
   font-size: 12px;
-  font-family: "Open sans";
+  font-family: "Open sans", sans-serif;
   font-weight: 400;
   line-height: 20.1px;
 }
@@ -242,7 +249,7 @@ header {
 
 .product__name {
   font-size: 12px;
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-weight: 300;
   line-height: 20.16px;
   letter-spacing: 0.16em;
@@ -260,7 +267,7 @@ header {
 
 .product__price {
   font-size: 12px;
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-weight: 300;
   line-height: 20.16px;
   letter-spacing: 0.16em;
@@ -271,14 +278,77 @@ header {
 .footer {
   background: #f1f1f1;
   padding: 80px 0 24px;
+  position: relative;
+}
+
+.footer__main {
+  display: flex;
 }
 
 .footer__email {
   width: 50%;
 }
 
-.footer__main {
+.footer__email > div {
+  width: 460px;
+  margin: auto;
+  position: relative;
+}
+
+.footer__image {
+  position: absolute;
+  left: -20px;
+  bottom: 165px;
+  width: 450px;
+}
+
+.footer__form {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.footer__form label {
+  font-size: 12px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  line-height: 14.08px;
+  letter-spacing: 0.165em;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 12px;
+  display: inline-block;
+  height: auto;
+}
+
+.footer__form input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #c4c4c4;
+  padding: 16px 0px;
+  background: transparent;
+}
+
+.footer__form input,
+button:focus,
+:focus-visible,
+:focus-within {
+  outline-color: #c4c4c4;
+}
+
+.footer__form button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: none;
+  background: transparent;
+  padding: 16px 0px;
+}
+
+.footer__icons {
   display: flex;
+  gap: 20px;
+  position: absolute;
+  left: 0;
 }
 
 .footer__navbar {
@@ -297,7 +367,7 @@ header {
 
 .footer__navbar h3 {
   font-size: 12px;
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-weight: 400;
   line-height: 14px;
   letter-spacing: 0.165em;
@@ -316,16 +386,17 @@ header {
 
 .footer__navbar ul li a {
   font-size: 14px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 23.45px;
   color: #7e7e7e;
   margin-bottom: 12px;
+  text-decoration: none;
 }
 
 .footer__bottom {
   font-size: 12px;
-  font-family: "Open sans";
+  font-family: "Open sans", sans-serif;
   font-weight: 300;
   line-height: 20.1px;
   color: #c4c4c4;
@@ -333,28 +404,31 @@ header {
   text-align: center;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 1199px) {
   h1 {
-    padding: 5px 0 19px;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 23.4px;
+    padding: 15px 0 60px;
   }
-  .header__top {
-    background: #f1f1f1;
-    padding: 6px 0;
+  .info__section-text-1 p:first-of-type {
+    margin-bottom: 60px;
+  }
+  .info__section-text-2 {
+    padding-left: 80px;
+  }
+  .footer__navbar {
+    gap: 80px;
+    padding: 0 50px 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  h1 {
+    font-size: 24px;
   }
   .header__main {
-    padding: 16px;
+    padding: 16px 24px;
   }
-  .nav__toggler {
-    display: block;
-  }
-  .logo img {
-    height: 16px;
-  }
-  .header__navbar {
-    display: none;
+  .navbar__list {
+    gap: 12px;
   }
   .header__icons a {
     display: none;
@@ -362,7 +436,29 @@ header {
   .header__icons a:nth-child(3) {
     display: block;
   }
-  .vertical__line {
+  .info__section-text-1 p:first-of-type {
+    margin-bottom: 40px;
+  }
+  .info__section-text-2 {
+    padding-left: 60px;
+  }
+  .info__section-text-3 span {
+    padding-left: 0;
+  }
+  .footer__email > div {
+    width: 320px;
+  }
+  .footer__navbar {
+    gap: 40px;
+    padding: 0 40px 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav__toggler {
+    display: block;
+  }
+  .header__navbar {
     display: none;
   }
   .info__section {
@@ -382,19 +478,79 @@ header {
   .info__section {
     padding: 40px 16px;
   }
-  .info__section-text-1 p {
-    font-size: 12px;
-    line-height: 20.1px;
-  }
   .info__section-text-1 p:first-of-type {
     margin-bottom: 40px;
-  }
-  .info__image-box img {
-    width: 100%;
   }
   .info__section-text-2 span {
     margin-top: 24px;
     margin-bottom: 16px;
+  }
+  .info__section-text-3 span {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 24px;
+  }
+  .vertical__line {
+    display: none;
+  }
+
+  .footer {
+    padding: 40px 24px;
+  }
+  .footer__main {
+    flex-direction: column;
+  }
+  .footer__image {
+    bottom: -20px;
+    width: 360px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .footer__email {
+    width: 100%;
+  }
+  .footer__email > div {
+    padding-bottom: 40px;
+    width: 70%;
+    margin: 0 auto 0 0;
+  }
+  .footer__navbar {
+    padding: 40px 0;
+    gap: 120px;
+    width: 100%;
+  }
+  .footer__bottom {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  h1 {
+    padding: 5px 0 19px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23.4px;
+  }
+  .header__top {
+    background: #f1f1f1;
+    padding: 6px 0;
+  }
+  .header__main {
+    padding: 16px;
+  }
+  .logo img {
+    height: 16px;
+  }
+  .info__section-text-1 p {
+    font-size: 12px;
+    line-height: 20.1px;
+  }
+
+  .info__image-box img {
+    width: 100%;
   }
   .info__section-text-2 li,
   .info__section-text-2 li::before {
@@ -406,11 +562,6 @@ header {
     font-size: 28px;
     line-height: 38.13px;
     letter-spacing: 0.08em;
-  }
-  .info__section-text-3 span {
-    width: 100%;
-    padding: 0;
-    margin-bottom: 24px;
   }
   .products {
     padding: 40px 16px;
@@ -424,11 +575,12 @@ header {
   .footer {
     padding: 40px 16px;
   }
-  .footer__email {
-    width: 100%;
+  .footer__image {
+    width: 270px;
   }
-  .footer__main {
-    flex-direction: column;
+  .footer__email > div {
+    padding-bottom: 40px;
+    width: 100%;
   }
   .footer__navbar {
     padding: 40px 0;
@@ -449,4 +601,10 @@ header {
   .footer__navbar ul li {
     margin-bottom: 8px;
   }
+  /* .footer__bottom {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  } */
 }

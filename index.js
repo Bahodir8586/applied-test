@@ -6,7 +6,7 @@ var swiper = new Swiper(".swiper", {
       slidesPerView: 3,
       spaceBetween: 12,
     },
-    1024: {
+    992: {
       slidesPerView: 4,
       spaceBetween: 16,
     },
